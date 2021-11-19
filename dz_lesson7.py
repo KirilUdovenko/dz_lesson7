@@ -17,7 +17,7 @@ def sort_by_surname(surname_dict):
 
 
 data_surname = read_json("data.json")
-data_sort_by_surname = sorted(data_surname, key=lambda surname_dict: surname_dict.get("name")[-1])
+data_sort_by_surname = sorted(data_surname, key=lambda surname_dict: surname_dict["name"])
 print(data_sort_by_surname)
 
 
