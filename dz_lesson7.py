@@ -23,7 +23,7 @@ print(data_sort_by_surname)
 
 def sort_by_years(year_dict):
     year = year_dict["years"]
-    return year.findall(r"\d+", some_data).split()[-1]
+    return re.findall(r"\d+", year)[-1]
 
 
 data_sort_by_year = sorted(some_data, key=lambda year_dict: year_dict["years"].split()[-1])
