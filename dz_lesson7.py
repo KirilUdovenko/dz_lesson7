@@ -14,8 +14,8 @@ print(some_data)
 
 
 def sort_by_surname(surname_dict):
-    name = surname_dict["name"][-1]
-    return name
+    names = surname_dict["name"][-1]
+    return names
 
 
 data_surname = read_json(filenames)
